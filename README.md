@@ -14,7 +14,9 @@
 ---
 
 ## Demo
-![Demo](screenshots/demo.gif)
+<div align="center">
+  <img src="screenshots/demo.gif" alt="Demo" width="700">
+</div>
 
 ---
 
@@ -24,19 +26,27 @@
 
 ### Tela inicial
 
-![Home](screenshots/01-home-desktop.png)
+<div align="center">
+  <img src="screenshots/01-home-desktop.png" alt="Home" width="700">
+</div>
 
 ### Perfil do desenvolvedor
 
-![Perfil](screenshots/02-profile-top-desktop.png)
+<div align="center">
+  <img src="screenshots/02-profile-top-desktop.png" alt="Perfil" width="700">
+</div>
 
 ### Gráficos e repositórios
 
-![Charts](screenshots/03-profile-charts-desktop.png)
+<div align="center">
+  <img src="screenshots/03-profile-charts-desktop.png" alt="Charts" width="700">
+</div>
 
 ### Lista de repositórios
 
-![Repos](screenshots/04-profile-repos-desktop.png)
+<div align="center">
+  <img src="screenshots/04-profile-repos-desktop.png" alt="Repos" width="700">
+</div>
 
 ### Mobile
 
@@ -52,99 +62,3 @@
 
 - Busca de perfis por username do GitHub
 - Estatísticas do perfil — repos, seguidores, seguindo, stars totais
-- Gráfico de linguagens (pie chart) com as top 5 linguagens
-- Gráfico de repos por ano (bar chart)
-- Repositórios filtráveis por linguagem, ordenação e forks
-- Histórico de buscas recentes salvo no localStorage
-- Dark/Light mode
-- Design responsivo (desktop e mobile)
-- Tratamento de erros (404, rate limit)
-
----
-
-## Tecnologias
-
-- **React 19** — biblioteca para construção da interface
-- **TypeScript** — tipagem estática e segurança no desenvolvimento
-- **Vite** — build tool rápida e moderna
-- **Tailwind CSS** — estilização utilitária
-- **Recharts** — gráficos interativos de linguagens
-- **TanStack Query** — gerenciamento de estado e cache de requisições
-- **Axios** — requisições HTTP para a GitHub REST API
-- **Zustand** — gerenciamento de estado global
-- **React Router DOM** — navegação entre páginas
-
----
-
-## Estrutura do Projeto
-
-```
-devfinder-pro/
-├── public/
-└── src/
-    ├── api/
-    │   ├── githubClient.ts     # instância axios + token
-    │   ├── userApi.ts          # busca de perfil do usuário
-    │   ├── reposApi.ts         # listagem de repositórios
-    │   └── types.ts            # tipagens da API
-    ├── components/
-    │   ├── charts/             # gráfico de linguagens e repos/ano
-    │   ├── profile/            # header, stats e links do perfil
-    │   ├── repos/              # lista, card e filtros de repos
-    │   └── ui/                 # componentes reutilizáveis
-    ├── hooks/                  # custom hooks (react-query, theme, debounce)
-    ├── pages/
-    │   ├── HomePage.tsx        # busca de usuário
-    │   └── ProfilePage.tsx     # dashboard do perfil
-    ├── store/                  # estado global (zustand)
-    └── utils/                  # funções utilitárias
-```
-
----
-
-## Como Executar
-
-1. Clone este repositório
-
-```bash
-git clone https://github.com/GeozedequeGuimaraes/devfinder-pro.git
-```
-
-2. Instale as dependências
-
-```bash
-npm install
-```
-
-3. Configure as variáveis de ambiente
-
-```bash
-cp .env.example .env
-```
-
-> Edite o arquivo `.env` e adicione seu token do GitHub:
-
-```env
-VITE_GITHUB_TOKEN=seu_token_aqui
-```
-
-4. Inicie o servidor de desenvolvimento
-
-```bash
-npm run dev
-```
-
----
-
-## Autor
-
-<div align="center">
-
-**Geozedeque Guimarães**
-
-Estudante de Ciência da Computação — CIn-UFPE
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/GeozedequeGuimaraes)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/geozedeque-guimaraes)
-
-</div>
