@@ -1,73 +1,87 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# DevFinder Pro 🔍
 
-Currently, two official plugins are available:
+### Dashboard web para busca de perfis do GitHub • React + TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📖 Sobre o Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**DevFinder Pro** é um dashboard web que permite buscar qualquer perfil do GitHub e visualizar estatísticas detalhadas, gráfico de linguagens mais usadas e repositórios filtráveis — tudo em uma interface moderna e responsiva.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+> Explore o universo de qualquer desenvolvedor com apenas um nome de usuário! 🚀
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ✨ Funcionalidades
+
+- 🔎 **Busca de perfis** — encontre qualquer usuário pelo username do GitHub
+- 📊 **Estatísticas do perfil** — seguidores, seguindo, repositórios públicos e mais
+- 🥧 **Gráfico de linguagens** — visualização das linguagens mais utilizadas nos repositórios
+- 📁 **Repositórios filtráveis** — filtre e navegue pelos projetos do usuário
+- 📱 **Design responsivo** — adaptado para desktop e mobile
+
+---
+
+## 🛠 Tecnologias
+
+- **React 19** — biblioteca para construção da interface
+- **TypeScript** — tipagem estática e segurança no desenvolvimento
+- **Vite** — build tool rápida e moderna
+- **Tailwind CSS** — estilização utilitária
+- **Recharts** — gráficos interativos de linguagens
+- **TanStack Query** — gerenciamento de estado e cache de requisições
+- **Axios** — requisições HTTP para a GitHub REST API
+- **Zustand** — gerenciamento de estado global
+- **React Router DOM** — navegação entre páginas
+
+---
+
+## 🚀 Como Executar
+
+1. Clone este repositório
+
+```bash
+git clone https://github.com/GeozedequeGuimaraes/devfinder-pro.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Instale as dependências
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+3. Configure as variáveis de ambiente
+
+```bash
+cp .env.example .env
+```
+
+4. Inicie o servidor de desenvolvimento
+
+```bash
+npm run dev
+```
+
+---
+
+## 👤 Autor
+
+<div align="center">
+
+**Geozedeque Guimarães**
+
+Estudante de Ciência da Computação — CIn-UFPE
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/GeozedequeGuimaraes)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/geozedeque-guimaraes)
+
+</div>
