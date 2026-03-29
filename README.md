@@ -13,6 +13,11 @@
 
 ---
 
+## Demo
+![Demo](screenshots/demo.gif)
+
+---
+
 ## Sobre o Projeto
 
 **DevFinder Pro** é um dashboard web que permite buscar qualquer perfil do GitHub e visualizar estatísticas detalhadas, gráfico de linguagens mais usadas e repositórios filtráveis — tudo em uma interface moderna e responsiva.
