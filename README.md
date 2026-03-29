@@ -25,38 +25,6 @@
 
 **DevFinder Pro** é um dashboard web que permite buscar qualquer perfil do GitHub e visualizar estatísticas detalhadas, gráfico de linguagens mais usadas e repositórios filtráveis — tudo em uma interface moderna e responsiva.
 
-### Tela inicial
-
-<div align="center">
-  <img src="screenshots/01-home-desktop.png" alt="Home" width="700">
-</div>
-
-### Perfil do desenvolvedor
-
-<div align="center">
-  <img src="screenshots/02-profile-top-desktop.png" alt="Perfil" width="700">
-</div>
-
-### Gráficos e repositórios
-
-<div align="center">
-  <img src="screenshots/03-profile-charts-desktop.png" alt="Charts" width="700">
-</div>
-
-### Lista de repositórios
-
-<div align="center">
-  <img src="screenshots/04-profile-repos-desktop.png" alt="Repos" width="700">
-</div>
-
-### Mobile
-
-<p align="center">
-  <img src="screenshots/05-home-mobile.png" width="280" alt="Home Mobile">
-  &nbsp;&nbsp;&nbsp;
-  <img src="screenshots/06-profile-mobile.png" width="280" alt="Profile Mobile">
-</p>
-
 ---
 
 ## Funcionalidades
@@ -146,7 +114,39 @@ npm run dev
 ```
 
 ---
+### Tela inicial
 
+<div align="center">
+  <img src="screenshots/01-home-desktop.png" alt="Home" width="700">
+</div>
+
+### Perfil do desenvolvedor
+
+<div align="center">
+  <img src="screenshots/02-profile-top-desktop.png" alt="Perfil" width="700">
+</div>
+
+### Gráficos e repositórios
+
+<div align="center">
+  <img src="screenshots/03-profile-charts-desktop.png" alt="Charts" width="700">
+</div>
+
+### Lista de repositórios
+
+<div align="center">
+  <img src="screenshots/04-profile-repos-desktop.png" alt="Repos" width="700">
+</div>
+
+### Mobile
+
+<p align="center">
+  <img src="screenshots/05-home-mobile.png" width="280" alt="Home Mobile">
+  &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/06-profile-mobile.png" width="280" alt="Profile Mobile">
+</p>
+
+---
 ## Autor
 
 <div align="center">
