@@ -1,8 +1,8 @@
 <div align="center">
 
-# DevFinder Pro 🔍
+# DevFinder Pro
 
-### Dashboard web para busca de perfis do GitHub • React + TypeScript
+### Dashboard web para busca de perfis do GitHub
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -13,25 +13,51 @@
 
 ---
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 **DevFinder Pro** é um dashboard web que permite buscar qualquer perfil do GitHub e visualizar estatísticas detalhadas, gráfico de linguagens mais usadas e repositórios filtráveis — tudo em uma interface moderna e responsiva.
 
-> Explore o universo de qualquer desenvolvedor com apenas um nome de usuário! 🚀
+### Tela inicial
+
+![Home](screenshots/01-home-desktop.png)
+
+### Perfil do desenvolvedor
+
+![Perfil](screenshots/02-profile-top-desktop.png)
+
+### Gráficos e repositórios
+
+![Charts](screenshots/03-profile-charts-desktop.png)
+
+### Lista de repositórios
+
+![Repos](screenshots/04-profile-repos-desktop.png)
+
+### Mobile
+
+<p align="center">
+  <img src="screenshots/05-home-mobile.png" width="280" alt="Home Mobile">
+  &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/06-profile-mobile.png" width="280" alt="Profile Mobile">
+</p>
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- 🔎 **Busca de perfis** — encontre qualquer usuário pelo username do GitHub
-- 📊 **Estatísticas do perfil** — seguidores, seguindo, repositórios públicos e mais
-- 🥧 **Gráfico de linguagens** — visualização das linguagens mais utilizadas nos repositórios
-- 📁 **Repositórios filtráveis** — filtre e navegue pelos projetos do usuário
-- 📱 **Design responsivo** — adaptado para desktop e mobile
+- Busca de perfis por username do GitHub
+- Estatísticas do perfil — repos, seguidores, seguindo, stars totais
+- Gráfico de linguagens (pie chart) com as top 5 linguagens
+- Gráfico de repos por ano (bar chart)
+- Repositórios filtráveis por linguagem, ordenação e forks
+- Histórico de buscas recentes salvo no localStorage
+- Dark/Light mode
+- Design responsivo (desktop e mobile)
+- Tratamento de erros (404, rate limit)
 
 ---
 
-## 🛠 Tecnologias
+## Tecnologias
 
 - **React 19** — biblioteca para construção da interface
 - **TypeScript** — tipagem estática e segurança no desenvolvimento
@@ -45,7 +71,7 @@
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 devfinder-pro/
@@ -57,11 +83,11 @@ devfinder-pro/
     │   ├── reposApi.ts         # listagem de repositórios
     │   └── types.ts            # tipagens da API
     ├── components/
-    │   ├── charts/             # gráfico de linguagens
-    │   ├── profile/            # cards de perfil e estatísticas
-    │   ├── repos/              # lista e filtros de repositórios
+    │   ├── charts/             # gráfico de linguagens e repos/ano
+    │   ├── profile/            # header, stats e links do perfil
+    │   ├── repos/              # lista, card e filtros de repos
     │   └── ui/                 # componentes reutilizáveis
-    ├── hooks/                  # custom hooks (react-query)
+    ├── hooks/                  # custom hooks (react-query, theme, debounce)
     ├── pages/
     │   ├── HomePage.tsx        # busca de usuário
     │   └── ProfilePage.tsx     # dashboard do perfil
@@ -71,7 +97,7 @@ devfinder-pro/
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 1. Clone este repositório
 
@@ -105,7 +131,7 @@ npm run dev
 
 ---
 
-## 👤 Autor
+## Autor
 
 <div align="center">
 
