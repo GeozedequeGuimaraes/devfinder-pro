@@ -45,6 +45,32 @@
 
 ---
 
+## 📁 Estrutura do Projeto
+
+```
+devfinder-pro/
+├── public/
+└── src/
+    ├── api/
+    │   ├── githubClient.ts     # instância axios + token
+    │   ├── userApi.ts          # busca de perfil do usuário
+    │   ├── reposApi.ts         # listagem de repositórios
+    │   └── types.ts            # tipagens da API
+    ├── components/
+    │   ├── charts/             # gráfico de linguagens
+    │   ├── profile/            # cards de perfil e estatísticas
+    │   ├── repos/              # lista e filtros de repositórios
+    │   └── ui/                 # componentes reutilizáveis
+    ├── hooks/                  # custom hooks (react-query)
+    ├── pages/
+    │   ├── HomePage.tsx        # busca de usuário
+    │   └── ProfilePage.tsx     # dashboard do perfil
+    ├── store/                  # estado global (zustand)
+    └── utils/                  # funções utilitárias
+```
+
+---
+
 ## 🚀 Como Executar
 
 1. Clone este repositório
@@ -63,6 +89,12 @@ npm install
 
 ```bash
 cp .env.example .env
+```
+
+> Edite o arquivo `.env` e adicione seu token do GitHub:
+
+```env
+VITE_GITHUB_TOKEN=seu_token_aqui
 ```
 
 4. Inicie o servidor de desenvolvimento
