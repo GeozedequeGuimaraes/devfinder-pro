@@ -2,7 +2,7 @@
 
 # DevFinder Pro
 
-### Dashboard web para busca de perfis do GitHub
+Dashboard web para busca de perfis do GitHub
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -16,146 +16,124 @@
 ## Demo
 
 <div align="center">
-  <img src="screenshots/demo.gif" alt="Demo" width="700">
-</div>
+<img src="screenshots/demo.gif" alt="Demo" width="700">
+</div>div>
 
 ---
 
-## Sobre o Projeto
+## Sobre o projeto
 
-**DevFinder Pro** é um dashboard web que permite buscar qualquer perfil do GitHub e visualizar estatísticas detalhadas, gráfico de linguagens mais usadas e repositórios filtráveis — tudo em uma interface moderna e responsiva.
-
----
-
-## Funcionalidades
-
-- Busca de perfis por username do GitHub
-- Estatísticas do perfil — repos, seguidores, seguindo, stars totais
-- Gráfico de linguagens (pie chart) com as top 5 linguagens
-- Gráfico de repos por ano (bar chart)
-- Repositórios filtráveis por linguagem, ordenação e forks
-- Histórico de buscas recentes salvo no localStorage
-- Dark/Light mode
-- Design responsivo (desktop e mobile)
-- Tratamento de erros (404, rate limit)
+DevFinder Pro busca qualquer perfil do GitHub e exibe estatísticas detalhadas: repositórios, seguidores, seguindo, stars totais, gráfico de linguagens mais usadas e repositórios filtráveis por linguagem, ordenação e forks. O histórico de buscas fica salvo no localStorage. Há dark/light mode e o design é responsivo para desktop e mobile.
 
 ---
 
 ## Tecnologias
 
-- **React 19** — biblioteca para construção da interface
-- **TypeScript** — tipagem estática e segurança no desenvolvimento
-- **Vite** — build tool rápida e moderna
-- **Tailwind CSS** — estilização utilitária
-- **Recharts** — gráficos interativos de linguagens
-- **TanStack Query** — gerenciamento de estado e cache de requisições
-- **Axios** — requisições HTTP para a GitHub REST API
-- **Zustand** — gerenciamento de estado global
-- **React Router DOM** — navegação entre páginas
+- React 19
+- - TypeScript
+  - - Vite
+    - - Tailwind CSS
+      - - Recharts para gráficos interativos de linguagens
+        - - TanStack Query para gerenciamento de estado e cache
+          - - Axios para requisições à GitHub REST API
+            - - Zustand para estado global
+              - - React Router DOM para navegação
+               
+                - ---
 
----
+                ## Estrutura
 
-## Estrutura do Projeto
+                ```
+                devfinder-pro/
+                ├── public/
+                └── src/
+                    ├── api/
+                    │   ├── githubClient.ts
+                    │   ├── userApi.ts
+                    │   ├── reposApi.ts
+                    │   └── types.ts
+                    ├── components/
+                    │   ├── charts/
+                    │   ├── profile/
+                    │   ├── repos/
+                    │   └── ui/
+                    ├── hooks/
+                    ├── pages/
+                    │   ├── HomePage.tsx
+                    │   └── ProfilePage.tsx
+                    ├── store/
+                    └── utils/
+                ```
 
-```
-devfinder-pro/
-├── public/
-└── src/
-    ├── api/
-    │   ├── githubClient.ts # instância axios + token
-    │   ├── userApi.ts      # busca de perfil do usuário
-    │   ├── reposApi.ts     # listagem de repositórios
-    │   └── types.ts        # tipagens da API
-    ├── components/
-    │   ├── charts/         # gráfico de linguagens e repos/ano
-    │   ├── profile/        # header, stats e links do perfil
-    │   ├── repos/          # lista, card e filtros de repos
-    │   └── ui/             # componentes reutilizáveis
-    ├── hooks/              # custom hooks (react-query, theme, debounce)
-    ├── pages/
-    │   ├── HomePage.tsx    # busca de usuário
-    │   └── ProfilePage.tsx # dashboard do perfil
-    ├── store/              # estado global (zustand)
-    └── utils/              # funções utilitárias
-```
+                ---
 
----
+                ## Como executar
 
-## Como Executar
+                1. Clone o repositório:
+               
+                2. ```bash
+                   git clone https://github.com/GeozedequeGuimaraes/devfinder-pro.git
+                   ```
 
-1. Clone este repositório
+                   2. Instale as dependências:
+                  
+                   3. ```bash
+                      npm install
+                      ```
 
-```bash
-git clone https://github.com/GeozedequeGuimaraes/devfinder-pro.git
-```
+                      3. Configure as variáveis de ambiente:
+                     
+                      4. ```bash
+                         cp .env.example .env
+                         ```
 
-2. Instale as dependências
+                         Edite o `.env` e adicione seu token do GitHub:
 
-```bash
-npm install
-```
+                         ```env
+                         VITE_GITHUB_TOKEN=seu_token_aqui
+                         ```
 
-3. Configure as variáveis de ambiente
+                         4. Inicie o servidor de desenvolvimento:
+                        
+                         5. ```bash
+                            npm run dev
+                            ```
 
-```bash
-cp .env.example .env
-```
+                            ---
 
-> Edite o arquivo `.env` e adicione seu token do GitHub:
+                            ## Screenshots
 
-```env
-VITE_GITHUB_TOKEN=seu_token_aqui
-```
+                            <div align="center">
+                            <img src="screenshots/01-home-desktop.png" alt="Home" width="700">
+                            </div>div>
 
-4. Inicie o servidor de desenvolvimento
+                            <div align="center">
+                            <img src="screenshots/02-profile-top-desktop.png" alt="Perfil" width="700">
+                            </div>div>
 
-```bash
-npm run dev
-```
+                            <div align="center">
+                            <img src="screenshots/03-profile-charts-desktop.png" alt="Charts" width="700">
+                            </div>div>
 
----
-### Tela inicial
+                            <div align="center">
+                            <img src="screenshots/04-profile-repos-desktop.png" alt="Repos" width="700">
+                            </div>div>
 
-<div align="center">
-  <img src="screenshots/01-home-desktop.png" alt="Home" width="700">
-</div>
+                            <p align="center">
+                            <img src="screenshots/05-home-mobile.png" width="280" alt="Home Mobile">
+                            &nbsp;&nbsp;&nbsp;
+                            <img src="screenshots/06-profile-mobile.png" width="280" alt="Profile Mobile">
+                            </p>p>
 
-### Perfil do desenvolvedor
+                            ---
 
-<div align="center">
-  <img src="screenshots/02-profile-top-desktop.png" alt="Perfil" width="700">
-</div>
+                            ## Autor
 
-### Gráficos e repositórios
+                            <div align="center">
 
-<div align="center">
-  <img src="screenshots/03-profile-charts-desktop.png" alt="Charts" width="700">
-</div>
+                            Geozedeque Guimarães — Estudante de Ciência da Computação, CIn-UFPE
 
-### Lista de repositórios
+                            [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/GeozedequeGuimaraes)
+                            [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/geozedeque-guimaraes)
 
-<div align="center">
-  <img src="screenshots/04-profile-repos-desktop.png" alt="Repos" width="700">
-</div>
-
-### Mobile
-
-<p align="center">
-  <img src="screenshots/05-home-mobile.png" width="280" alt="Home Mobile">
-  &nbsp;&nbsp;&nbsp;
-  <img src="screenshots/06-profile-mobile.png" width="280" alt="Profile Mobile">
-</p>
-
----
-## Autor
-
-<div align="center">
-
-**Geozedeque Guimarães**
-
-Estudante de Ciência da Computação — CIn-UFPE
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/GeozedequeGuimaraes)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/geozedeque-guimaraes)
-
-</div>
+                            </div>
