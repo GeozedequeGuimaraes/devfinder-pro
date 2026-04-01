@@ -17,7 +17,7 @@ Dashboard web para busca de perfis do GitHub
 
 <div align="center">
 <img src="screenshots/demo.gif" alt="Demo" width="700">
-</div>div>
+</div>
 
 ---
 
@@ -30,110 +30,110 @@ DevFinder Pro busca qualquer perfil do GitHub e exibe estatísticas detalhadas: 
 ## Tecnologias
 
 - React 19
-- - TypeScript
-  - - Vite
-    - - Tailwind CSS
-      - - Recharts para gráficos interativos de linguagens
-        - - TanStack Query para gerenciamento de estado e cache
-          - - Axios para requisições à GitHub REST API
-            - - Zustand para estado global
-              - - React Router DOM para navegação
-               
-                - ---
+- TypeScript
+- Vite
+- Tailwind CSS
+- Recharts para gráficos interativos de linguagens
+- TanStack Query para gerenciamento de estado e cache
+- Axios para requisições à GitHub REST API
+- Zustand para estado global
+- React Router DOM para navegação
 
-                ## Estrutura
+---
 
-                ```
-                devfinder-pro/
-                ├── public/
-                └── src/
-                    ├── api/
-                    │   ├── githubClient.ts
-                    │   ├── userApi.ts
-                    │   ├── reposApi.ts
-                    │   └── types.ts
-                    ├── components/
-                    │   ├── charts/
-                    │   ├── profile/
-                    │   ├── repos/
-                    │   └── ui/
-                    ├── hooks/
-                    ├── pages/
-                    │   ├── HomePage.tsx
-                    │   └── ProfilePage.tsx
-                    ├── store/
-                    └── utils/
-                ```
+## Estrutura
 
-                ---
+```
+devfinder-pro/
+├── public/
+└── src/
+    ├── api/
+    │   ├── githubClient.ts
+    │   ├── userApi.ts
+    │   ├── reposApi.ts
+    │   └── types.ts
+    ├── components/
+    │   ├── charts/
+    │   ├── profile/
+    │   ├── repos/
+    │   └── ui/
+    ├── hooks/
+    ├── pages/
+    │   ├── HomePage.tsx
+    │   └── ProfilePage.tsx
+    ├── store/
+    └── utils/
+```
 
-                ## Como executar
+---
 
-                1. Clone o repositório:
-               
-                2. ```bash
-                   git clone https://github.com/GeozedequeGuimaraes/devfinder-pro.git
-                   ```
+## Como executar
 
-                   2. Instale as dependências:
-                  
-                   3. ```bash
-                      npm install
-                      ```
+1. Clone o repositório:
 
-                      3. Configure as variáveis de ambiente:
-                     
-                      4. ```bash
-                         cp .env.example .env
-                         ```
+```bash
+git clone https://github.com/GeozedequeGuimaraes/devfinder-pro.git
+```
 
-                         Edite o `.env` e adicione seu token do GitHub:
+2. Instale as dependências:
 
-                         ```env
-                         VITE_GITHUB_TOKEN=seu_token_aqui
-                         ```
+```bash
+npm install
+```
 
-                         4. Inicie o servidor de desenvolvimento:
-                        
-                         5. ```bash
-                            npm run dev
-                            ```
+3. Configure as variáveis de ambiente:
 
-                            ---
+```bash
+cp .env.example .env
+```
 
-                            ## Screenshots
+Edite o `.env` e adicione seu token do GitHub:
 
-                            <div align="center">
-                            <img src="screenshots/01-home-desktop.png" alt="Home" width="700">
-                            </div>div>
+```env
+VITE_GITHUB_TOKEN=seu_token_aqui
+```
 
-                            <div align="center">
-                            <img src="screenshots/02-profile-top-desktop.png" alt="Perfil" width="700">
-                            </div>div>
+4. Inicie o servidor de desenvolvimento:
 
-                            <div align="center">
-                            <img src="screenshots/03-profile-charts-desktop.png" alt="Charts" width="700">
-                            </div>div>
+```bash
+npm run dev
+```
 
-                            <div align="center">
-                            <img src="screenshots/04-profile-repos-desktop.png" alt="Repos" width="700">
-                            </div>div>
+---
 
-                            <p align="center">
-                            <img src="screenshots/05-home-mobile.png" width="280" alt="Home Mobile">
-                            &nbsp;&nbsp;&nbsp;
-                            <img src="screenshots/06-profile-mobile.png" width="280" alt="Profile Mobile">
-                            </p>p>
+## Screenshots
 
-                            ---
+<div align="center">
+<img src="screenshots/01-home-desktop.png" alt="Home" width="700">
+</div>
 
-                            ## Autor
+<div align="center">
+<img src="screenshots/02-profile-top-desktop.png" alt="Perfil" width="700">
+</div>
 
-                            <div align="center">
+<div align="center">
+<img src="screenshots/03-profile-charts-desktop.png" alt="Charts" width="700">
+</div>
 
-                            Geozedeque Guimarães — Estudante de Ciência da Computação, CIn-UFPE
+<div align="center">
+<img src="screenshots/04-profile-repos-desktop.png" alt="Repos" width="700">
+</div>
 
-                            [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/GeozedequeGuimaraes)
-                            [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/geozedeque-guimaraes)
+<p align="center">
+<img src="screenshots/05-home-mobile.png" width="280" alt="Home Mobile">
+&nbsp;&nbsp;&nbsp;
+<img src="screenshots/06-profile-mobile.png" width="280" alt="Profile Mobile">
+</p>
 
-                            </div>
+---
+
+## Autor
+
+<div align="center">
+
+Geozedeque Guimarães — Estudante de Ciência da Computação, CIn-UFPE
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/GeozedequeGuimaraes)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/geozedeque-guimaraes)
+
+</div>
